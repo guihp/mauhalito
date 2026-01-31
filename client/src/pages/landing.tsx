@@ -4,6 +4,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import heroImg from "@/assets/images/hero-confident-smile.png";
 import beforeImg from "@/assets/images/before-worried.png";
 import afterImg from "@/assets/images/after-confident-chat.png";
+import izadoraImg from "/images/izadora.jpeg";
+import capaLivroImg from "/images/capa_livro.png";
 
 function ProgressRow(props: {
   label: string;
@@ -466,24 +468,32 @@ export default function Landing() {
           <div className="hf-container">
             <div className="mx-auto grid max-w-5xl items-center gap-10 md:grid-cols-2">
               <div className="hf-card hf-noise overflow-hidden rounded-[24px] bg-[hsl(var(--hf-cream-light))]" data-testid="card-author">
-                <div className="aspect-[4/3] w-full bg-[radial-gradient(circle_at_30%_30%,rgba(107,123,94,0.35),rgba(107,123,94,0)_60%)]" />
+                <img
+                  src={izadoraImg}
+                  alt="Izadora Barros - Cirurgiã-dentista"
+                  className="h-full w-full object-cover aspect-[4/3]"
+                  data-testid="img-author"
+                />
               </div>
               <div>
                 <h2 className="hf-heading text-2xl font-bold tracking-tight" data-testid="text-author-title">
-                  Oi, eu sou o [Nome do Autor]!
+                  Oi, eu sou a Izadora Barros!
                 </h2>
                 <div className="mt-4 space-y-3 text-sm leading-relaxed text-black/70" data-testid="text-author-body">
                   <p>
-                    Com mais de [X] pessoas ajudadas e anos de estudo sobre saúde bucal e bem-estar, meu propósito é ajudar você a
-                    viver sem o peso do constrangimento.
-                  </p>
-                  <p>Uma rotina que te liberta, te trazendo resultados, confiança e leveza.</p>
-                  <p>
-                    Eu sei como é difícil lidar com o mau hálito, a insegurança e a sensação de não poder se aproximar das pessoas.
-                    Já passei por isso e encontrei o caminho para superar.
+                    Sou Izadora Barros, cirurgiã-dentista com atuação voltada para a promoção da saúde bucal, autoestima e bem-estar através de orientações práticas e acessíveis.
                   </p>
                   <p>
-                    Hoje, uso minha experiência para orientar e inspirar pessoas a conquistarem sua liberdade e viverem sem medo.
+                    Ao longo da minha trajetória na Odontologia, desenvolvi experiência clínica e hospitalar, sempre com foco em um atendimento humanizado, disciplinado e baseado em protocolos seguros e eficazes. Atualmente, sou pós-graduanda em Cirurgia e Traumatologia Bucomaxilofacial e Harmonização Orofacial, aprofundando ainda mais meus conhecimentos para transformar vidas através do cuidado odontológico.
+                  </p>
+                  <p>
+                    Eu sei o quanto o mau hálito pode afetar a confiança, os relacionamentos e até mesmo a vida social de uma pessoa. Muitas vezes, ele não é apenas um detalhe, mas um problema silencioso que gera insegurança e desconforto.
+                  </p>
+                  <p>
+                    Por isso, criei este ebook com um objetivo muito claro: te mostrar, de forma simples e direta, os passos necessários para conquistar um hálito fresco, uma boca saudável e mais tranquilidade no dia a dia.
+                  </p>
+                  <p>
+                    Você merece se sentir segura ao falar, sorrir e estar perto das pessoas — e eu estou aqui para te guiar nesse processo com conhecimento, clareza e um método que realmente funciona.
                   </p>
                 </div>
               </div>
@@ -499,12 +509,15 @@ export default function Landing() {
                 <div className="hf-card hf-noise rounded-[24px] bg-white p-7" data-testid="card-mockup">
                   <div className="space-y-4">
                     <div className="hf-heading text-sm font-semibold text-black/60" data-testid="text-mockup-kicker">
-                      Mockup do produto
+                      Seu novo guia:
                     </div>
-                    <div className="grid gap-3">
-                      <div className="h-36 rounded-[18px] bg-[linear-gradient(135deg,rgba(107,123,94,0.12),rgba(127,255,0,0.14))]" />
-                      <div className="h-20 rounded-[18px] bg-[linear-gradient(135deg,rgba(0,0,0,0.04),rgba(107,123,94,0.12))]" />
-                      <div className="h-20 rounded-[18px] bg-[linear-gradient(135deg,rgba(0,0,0,0.04),rgba(127,255,0,0.10))]" />
+                    <div className="relative aspect-[3/4] overflow-hidden rounded-[18px] bg-[hsl(var(--hf-cream))] shadow-lg">
+                      <img
+                        src={capaLivroImg}
+                        alt="Capa do Livro Hálito Fresco Sem Segredo"
+                        className="h-full w-full object-contain"
+                        data-testid="img-book-cover"
+                      />
                     </div>
                   </div>
                 </div>
