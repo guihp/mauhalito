@@ -4,8 +4,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import heroImg from "@/assets/images/hero-confident-smile.png";
 import beforeImg from "@/assets/images/before-worried.png";
 import afterImg from "@/assets/images/after-confident-chat.png";
-import izadoraImg from "/images/izadora.jpeg";
-import capaLivroImg from "/images/capa_livro.png";
+import izadoraImg from "@/assets/images/izadora.jpeg";
+import capaLivroImg from "@/assets/images/capa_livro.png";
 
 function ProgressRow(props: {
   label: string;
@@ -196,7 +196,7 @@ export default function Landing() {
               </h1>
 
               <p className="mt-5 max-w-2xl text-base leading-relaxed text-black/65" data-testid="text-hero-subtitle">
-                Um método direto, realista e humano — para você recuperar a confiança e se aproximar sem medo.
+                Um método direto, realista e humano — para você recuperar a confiança e se aproveitar sem medo.
               </p>
 
               <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row">
