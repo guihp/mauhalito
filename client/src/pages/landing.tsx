@@ -471,7 +471,7 @@ export default function Landing() {
                 <img
                   src={izadoraImg}
                   alt="Izadora Barros - Cirurgiã-dentista"
-                  className="h-full w-full object-cover aspect-[4/3]"
+                  className="h-full w-full object-cover object-top aspect-[4/5] sm:aspect-[4/3]"
                   data-testid="img-author"
                 />
               </div>
@@ -557,19 +557,19 @@ export default function Landing() {
 
               <div className="mt-8 hf-card rounded-[24px] bg-white p-8" data-testid="card-price">
                 <div className="text-sm font-semibold text-black/50" data-testid="text-price-was">
-                  De <span className="line-through">R$ 97,00</span> por apenas:
+                  De <span className="line-through">R$ 27,90</span> por apenas:
                 </div>
 
                 <div className="mt-3 hf-heading text-5xl font-bold tracking-tight" data-testid="text-price-now">
-                  R$ 27,00
+                  R$ 10,00
                 </div>
 
                 <div className="mt-2 text-sm font-semibold text-black/60" data-testid="text-price-installments">
-                  (ou 3x de R$ 9,33)
+                  (Pagamento Único)
                 </div>
 
                 <div className="mt-5 text-sm text-black/60" data-testid="text-price-cash">
-                  ou R$ 27,00 à vista com desconto
+                  ou R$ 10,00 à vista no PIX
                 </div>
 
                 <div className="mt-7">
