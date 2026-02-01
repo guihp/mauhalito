@@ -149,8 +149,7 @@ export default function Landing() {
   );
 
   const onPrimaryCta = () => {
-    const el = document.getElementById("preco");
-    el?.scrollIntoView({ behavior: "smooth", block: "start" });
+    window.open("https://www.asaas.com/c/512c79uxvdc9y2lf", "_blank", "noopener,noreferrer");
   };
 
   const onWhatsapp = () => {
@@ -471,7 +470,7 @@ export default function Landing() {
                 <img
                   src={izadoraImg}
                   alt="Izadora Barros - Cirurgiã-dentista"
-                  className="h-full w-full object-cover object-top aspect-[4/5] sm:aspect-[4/3]"
+                  className="w-full h-auto object-contain rounded-[24px]"
                   data-testid="img-author"
                 />
               </div>
